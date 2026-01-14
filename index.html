@@ -18,11 +18,11 @@
       * {
         margin: 0;
         padding: 0;
-        box-sizing: content-box;
+        box-sizing: border-box;
       }
 
       body {
-        font-size: 8px;
+        font-size: 4px;
       }
       p,
       h1 {
@@ -41,7 +41,7 @@
       }
       .dies_setmana {
         display: flex;
-        justify-content: center;
+        justify-content: right;
         font-size: 3.5em;
         font-weight: 300;
         padding: 0 2em 1em 0;
@@ -61,7 +61,8 @@
         height: 100vh;
         display: grid;
         grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 400px 150px repeat(6, 1fr);
+        grid-template-rows: 4fr auto repeat(6, 1fr);
+        gap: 2em;
       }
       p {
         display: flex;
@@ -125,3 +126,4 @@
     </div>
   </body>
 </html>
+
